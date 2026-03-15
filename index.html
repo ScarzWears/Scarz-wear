@@ -1,20 +1,150 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-<title>SCARZ WEAR</title>
+<title>SCARZ</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:black;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:black;
+border-bottom:1px solid #222;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:90vh;
+background:url("hero.jpg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+letter-spacing:5px;
+}
+
+.hero button{
+padding:15px 40px;
+background:maroon;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+/* PRODUCT GRID */
+
+.products{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+padding:60px;
+}
+
+.product{
+text-align:center;
+}
+
+.product img{
+width:100%;
+transition:0.3s;
+}
+
+.product img:hover{
+transform:scale(1.05);
+}
+
+button{
+background:white;
+border:none;
+padding:10px 20px;
+margin-top:10px;
+cursor:pointer;
+}
+
+</style>
+
 </head>
 
-<body style="background:black;color:white;text-align:center;font-family:Arial;">
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>SCARZ</h2>
+
+<div>
+<a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">New Drops</a>
+<a href="#">Contact</a>
+</div>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
 
 <h1>SCARZ</h1>
-<p>Premium Streetwear & Tracksuits</p>
+<p>Premium Streetwear</p>
 
-<h2>Our Products</h2>
+<button>SHOP NOW</button>
 
-<img src="tracksuit.jpg" width="250">
-<p>Scarz Tracksuit</p>
-<button>Buy Now</button>
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+<div class="product">
+<img src="hoodie.jpg">
+<h3>Scarz Hoodie</h3>
+<p>$70</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="tracksuit.jpg">
+<h3>Scarz Tracksuit</h3>
+<p>$120</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="cap.jpg">
+<h3>Scarz Cap</h3>
+<p>$40</p>
+<button>Add to Cart</button>
+</div>
+
+</section>
 
 </body>
 
