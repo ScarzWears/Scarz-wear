@@ -113,21 +113,37 @@ font-size: 12px;
 
 .whatsapp-btn {
 width: 100%;
+text-align: center; 
+}
+  /* Improve product size */
+.product img {
+width: 100%;
+height: 220px;
+object-fit: contain;
+}
+
+/* Stack products nicely */
+.products {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* Improve text visibility */
+.hero-text {
+font-size: 20px;
 text-align: center;
 }
+  
 img {
-  max-height: 45vh;
-  object-fit: cover;
+width: 100%;
+height: 55vh;
+object-fit: cover;
+object-position: center top; /* 👈 shows upper body better */
 }
 button {
 width: 90%;
 }
-
-img {
-width: 100%;
-height: auto;
-}
-
 }
 /* ✅ MOBILE FIX ENDS HERE */
 </style>
